@@ -1,0 +1,7 @@
+This is a fun project with a piezo buzzer (ripped off from my motherboard) and an Atmega32 microcontroller. Timer0 of the Atmega32 is used in CTC mode to generate different PWM frequencies on the OC1A pin. The output is sent to the enable pin of an L293D which drives current to the piezo buzzer. An LCD is used to display the current value of the OCR1A register, and a switch to change it.
+
+TODO
+
+* Find frequencies for various notes using a reference frequency
+* A script to read plain notes and duration from a text file and generate code to set frequencies
+* Play generated frequencies according to duration
